@@ -1,0 +1,618 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* header */
+
+/* nav */
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #18181B;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-image: url(./img/twitch-logo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    padding: 0 20px;
+}
+
+.menu-btn:nth-child(1) {
+    border-right: 1px solid gray;
+}
+
+.href {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.href:hover {
+    color: blueviolet;
+}
+
+.list-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-image: url(./img/list-icon.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.list-icon:hover {
+    background-color: #464648;
+}
+
+/* search */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 331px;
+    height: 36px;
+    padding: 5px 10px;
+    color: aliceblue;
+    background-color: #464648;
+    border: 2px solid transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    caret-color: transparent;
+}
+
+.search-input:hover {
+    border: 2px solid silver;
+}
+
+.search-input:focus {
+    background-color: #18181B;
+    border: 2px solid blueviolet;
+    outline: 0;
+    transition: all 0.3s;
+}
+
+.search-btn {
+    width: 34px;
+    height: 36px;
+    background-color: #373738;
+    border-left: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: url(./img/search.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search-btn:hover {
+    background-color: #464648;
+}
+
+/* member */
+.member {
+    display: flex;
+    align-items: center;
+}
+
+.prime-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-image: url(./img/crown.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prime-btn:hover {
+    background-color: #464648;
+}
+
+.sign {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.sign-in, .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 46px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.sign-in {
+    background-color: #373738;
+}
+
+.sign-up {
+    background-color: blueviolet;
+}
+
+.sign-in:hover {
+    background-color: #464648;
+}
+
+.sign-up:hover {
+    background-color: rgb(129, 19, 231);
+}
+
+.href2 {
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.core-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-image: url(./img/member.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.core-btn:hover {
+    background-color: #464648;
+}
+
+/* side-bar */
+.side-bar {
+    width: 50px;
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    padding: 10px;
+    background-color: #1e1e22;
+}
+
+.side-btn {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sb1 {
+    background-image: url(./img/img3/9QOQ-70x70.png);
+}
+
+.sb2 {
+    background-image: url(./img/img3/crazyface.png);
+}
+
+.sb3 {
+    background-image: url(./img/img3/hina.png);
+}
+
+.sb4 {
+    background-image: url(./img/img3/sweetcamper.png);
+}
+
+.sb5 {
+    background-image: url(./img/img3/yuna.png);
+}
+
+.sb6 {
+    background-image: url(./img/img3/冠賢-70x70.png);
+}
+
+/* main */
+main {
+    margin: 50px 0 0 50px;
+}
+
+.container {
+    padding: 30px 30px 0 30px;
+    background-color: #0E0E10;
+}
+
+/* container1 */
+.e-sport {
+    margin: 0;
+    font-size: 54px;
+    color: aliceblue;
+}
+
+.e-sport-info {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px;
+    margin: 20px 0;
+}
+
+.col {
+    padding: 2px;
+    background-color: #373738;
+    border-radius: 5px;
+}
+
+.col2 {
+    padding: 2px;
+    min-width: 333px;
+}
+
+.col:hover {
+    background-color: #464648;
+}
+
+.game-card {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    background-color: #373738;
+    border-radius: 5px;
+}
+
+.game-card:hover {
+    background-color: #464648;
+}
+
+.game-img {
+    width: 38px;
+    height: 50px;
+    margin-right: 6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.game-01 {
+    background-image: url(./img/Counter-Strike_\ Global\ Offensive-48x64.jpg);
+}
+
+.game-02 {
+    background-image: url(./img/Apex\ Legends-48x64.jpg);
+}
+
+.game-03 {
+    background-image: url(./img/League\ of\ Legends-48x64.jpg);
+}
+
+.game-04 {
+    background-image: url(./img/Hearthstone-48x64.jpg);
+}
+
+.game-05 {
+    background-image: url(./img/PUBG_\ BATTLEGROUNDS-48x64.jpg);
+}
+
+.game-06 {
+    background-image: url(./img/Overwatch-48x64.jpg);
+}
+
+.game-07 {
+    background-image: url(./img/StarCraft\ II-48x64.jpg);
+}
+
+.game-08 {
+    background-image: url(./img/Fortnite-48x64.jpg);
+}
+
+.game-09 {
+    background-image: url(./img/Dota\ 2-48x64.jpg);
+}
+
+.game-10 {
+    background-image: url(./img/Call\ of\ Duty_\ Warzone-48x64.jpg);
+}
+
+.game-11 {
+    background-image: url(./img/World\ of\ Warcraft-48x64.jpg);
+}
+
+.game-12 {
+    background-image: url(./img/Magic_\ The\ Gathering-48x64.jpg);
+}
+
+.game-info {
+    width: 225px;
+}
+
+.game-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.sub-info {
+    margin: 0;
+    font-size: 13px;
+    color: silver;
+}
+
+.game-live {
+    margin-left: 10px;
+    padding: 2px;
+    align-self: flex-start;
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.live {
+    margin: 0;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+/* container2 */
+.container2 {
+    display: flex;
+}
+
+/* left */
+.live-stream {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: aliceblue;
+}
+
+.live-stream-info {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.left-stream {
+    display: flex;
+    flex-direction: column;
+}
+
+.stream {
+    width: 590px;
+    height: 330px;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.stream:hover {
+    box-shadow: -5px 5px #ff7373;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.stream-live {
+    padding: 2px;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.live2 {
+    margin: 0;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.stream-audience {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(70, 70, 70, 0.5);
+    text-align: center;
+}
+
+.audience {
+    margin: 0;
+    padding: 0 5px;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.competition {
+    display: flex;
+    padding-top: 10px;
+}
+
+.competition-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-image: url(./img/otplol_-150x150.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.competition-name {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+    color: blueviolet;
+    align-self: flex-end;
+}
+
+.stream-name {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.stream-name:hover {
+    color: blueviolet;
+}
+
+.sub-stream-info {
+    margin: 0;
+    font-size: 14px;
+    color: #ADADB8;
+}
+
+/* right */
+.right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rcol {
+    width: 285px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* small-stream-img */
+.ssi1 {
+    background-image: url(./img/playhearthstonekr-470x265.jpg);
+}
+
+.ssi2 {
+    background-image: url(./img/esl_csgo-470x265.jpg);
+}
+
+.ssi3 {
+    background-image: url(./img/img2/live_user_dreamhackcs-470x265.jpg);
+}
+
+.ssi4 {
+    background-image: url(./img/img2/rainbow6tw-470x265.jpg);
+}
+
+.ssi5 {
+    background-image: url(./img/img2/live_user_rainbow6-470x265.jpg);
+}
+
+.ssi6 {
+    background-image: url(./img/img2/live_user_beyondthesummit-470x265.jpg);
+}
+
+.ssi7 {
+    background-image: url(./img/img2/live_user_smitegame-470x265.jpg);
+}
+
+.ssi8 {
+    background-image: url(./img/img2/live_user_esl_asia-470x265.jpg);
+}
+
+/* competition-img */
+.ci2 {
+    background-image: url(./img/playhearthstonekr-150x150.png);
+}
+
+.ci3 {
+    background-image: url(./img/CSGO-150x150.jpeg);
+}
+
+.ci4 {
+    background-image: url(./img/img2/profile_image-150x150.png);
+}
+
+.ci5 {
+    background-image: url(./img/img2/R6-150x150.png);
+}
+
+.ci6 {
+    background-image: url(./img/img2/R62-150x150.png);
+}
+
+.ci7 {
+    background-image: url(./img/img2/beyond-150x150.jpg);
+}
+
+.ci8 {
+    background-image: url(./img/img2/SG-150x150.png);
+}
+
+.ci9 {
+    background-image: url(./img/img2/asia-150x150.png);
+}
+
+.stream-small {
+    width: 285px;
+    height: 160px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: box-shadow 0.3s;
+}
+
+.stream-small:hover {
+    box-shadow: -3px 3px #ff7373;
+}
+
+.stream-name-small {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.stream-name-small:hover {
+    color: blueviolet;
+}
+
+.sub-stream-info-small {
+    margin: 0;
+    font-size: 13px;
+    color: #ADADB8;
+}
